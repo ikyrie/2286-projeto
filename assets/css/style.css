@@ -54,6 +54,7 @@ body {
     height: 100vh;
     background-color: #15191C;
     transition: left .25s;
+    z-index: 99;
 }
 
 .menu-lateral--ativo {
@@ -121,20 +122,30 @@ body {
 
 .principal {
     padding: 24px 16px;
+    display: grid;
+    row-gap: 32px;
 }
 
 .titulo-pagina {
     font-size: 1.5rem;
     font-weight: 700;
+}
 
-    margin-bottom: 16px;
+.titulo-secao {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.secao {
+    display: grid;
+    row-gap: 16px;
 }
 
 /* Cartão */
 
 .cartao {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 15px;
     overflow: hidden;
     background-color: #2C343A;
 }
@@ -172,14 +183,23 @@ body {
 
 .cartao__perfil::before {
     content: "";
+    position: absolute;
+    top: -24px;
+    right: 16px;
     display: block;
-    width: 24px;
-    height: 24px;
-    margin-right: 8px;
+    width: 48px;
+    height: 48px;
     background-image: url(../img/profile_2.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.cartao__perfil--destaque::before {
+    position: static;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
 }
 
 
@@ -199,6 +219,10 @@ body {
     margin-right: 8px;
 }
 
+.cartao__info--valor::before {
+    content: "\e905";
+}
+
 .cartao__botao {
     display: flex;
     align-items: center;
@@ -208,17 +232,26 @@ body {
     height: 40px;
     border-radius: 10px;
     font-size: 0.9rem;
+    justify-self: flex-end;
 }
 
 .cartao__botao i::before {
     content: "\e90b";
     display: block;
-    margin-right: 8px;
     font-size: 24px;
-    transform: translateY(2px);
+    
+}
+
+.cartao__botao--comprar i::before {
+    content: "\e901";
 }
 
 .cartao__botao--destaque {
     width: 100%;
     grid-column: span 2;
+}
+
+.cartao__botao--destaque i::before {
+    margin-right: 8px;
+    transform: translateY(2px);
 }
