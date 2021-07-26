@@ -27,6 +27,24 @@ botão: #0480DC
 
 sombras: 0px 4px 4px rgba(0, 0, 0, 0.16)
 
+### Ícones
+
+Camisas = \e900
+Carrinho = \e901
+Inicio = \e902
+Integrantes = \e903
+Menu = \e904
+Moeda = \e905
+Notificação = \e906
+Pico = \e908
+Picos = \e909
+Pinturas = \e90a
+Play = \e90b
+Relogio = \e90c
+Seta-baixo = \e90d
+Videos = \e90e
+Visualizacao = \e90f
+
 ### Espaçamentos
 
 Espaço interno botão: 8px
