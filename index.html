@@ -15,6 +15,8 @@
     <header class="cabecalho">
         <button class="cabecalho__menu" aria-label="Botão do menu lateral"><i></i></button>
         <img src="assets/img/logo.svg" alt="Logo da HZC" class="cabecalho__logo">
+        <h2 class="cabecalho__titulo">Início</h2>
+        <p class="cabecalho__perfil">Bruno Lopes</p>
         <button class="cabecalho__notificacao" aria-label="Acessar notificações"><i></i></button>
     </header>
     <nav class="menu-lateral">
@@ -28,9 +30,10 @@
     </nav>
     <main class="principal">
         <h2 class="titulo-pagina">Início</h2>
-        <article class="cartao">
+        <article class="cartao destaque-video">
             <div class="cartao__imagem">
-                <img src="assets/img/banner-mobile_1.png" alt="Banner do vídeo hzc - life is... / 2021">
+                <img src="assets/img/banner-mobile_1.png" alt="Banner do vídeo hzc - life is... / 2021" class="cartao__imagem--mobile">
+                <img src="assets/img/banner_1.png" alt="Banner do vídeo hzc - life is... / 2021" class="cartao__imagem--desktop">
             </div>
             <div class="cartao__corpo">
                 <p class="cartao__destaque">Vídeo em destaque</p>
@@ -41,7 +44,38 @@
                 <button class="cartao__botao cartao__botao--destaque"><i></i>Assistir agora</button>
             </div>
         </article>
-        <section class="secao">
+        <article class="cartao cartao--recente recente-videos">
+            <h4 class="cartao__titulo">Vídeos recentes</h4>
+            <a href="#" class="cartao__link">Ver todos</a>
+            <ul class="cartao__lista">
+                <li class="cartao__item">
+                    <img src="assets/img/miniatura_1.png" alt="Miniatura do item" class="cartao__item-thumbnail">
+                    <p class="cartao__item-titulo">HZC - Love Machine</p>
+                    <p class="cartao__item-perfil">Júlia Fonseca</p>
+                </li>
+                <li class="cartao__item">
+                    <img src="assets/img/miniatura_2.png" alt="Miniatura do item" class="cartao__item-thumbnail">
+                    <p class="cartao__item-titulo">HZC - Vol. 3</p>
+                    <p class="cartao__item-perfil">Júlia Fonseca</p>
+                </li>
+                <li class="cartao__item">
+                    <img src="assets/img/miniatura_3.png" alt="Miniatura do item" class="cartao__item-thumbnail">
+                    <p class="cartao__item-titulo">HZC - Pescaria na Urca</p>
+                    <p class="cartao__item-perfil">Júlia Fonseca</p>
+                </li>
+                <li class="cartao__item">
+                    <img src="assets/img/miniatura_4.png" alt="Miniatura do item" class="cartao__item-thumbnail">
+                    <p class="cartao__item-titulo">Vidalocagi - Guerreiros do Asfalto</p>
+                    <p class="cartao__item-perfil">Júlia Fonseca</p>
+                </li>
+                <li class="cartao__item">
+                    <img src="assets/img/miniatura_5.png" alt="Miniatura do item" class="cartao__item-thumbnail">
+                    <p class="cartao__item-titulo">Vidalocagi - Não importa o nível</p>
+                    <p class="cartao__item-perfil">Júlia Fonseca</p>
+                </li>
+            </ul>
+        </article>
+        <section class="secao secao-videos">
             <h3 class="titulo-secao">Vídeos mais vistos</h3>
             <article class="cartao">
                 <div class="cartao__imagem">
@@ -88,9 +122,41 @@
                 </div>
             </article>
         </section>
-        <article class="cartao">
+        <article class="cartao cartao--recente recente-artes">
+            <h4 class="cartao__titulo">Novas artes</h4>
+            <a href="#" class="cartao__link">Ver todas</a>
+            <ul class="cartao__lista">
+                <li class="cartao__item">
+                    <img src="assets/img/miniatura_1.png" alt="Miniatura do item" class="cartao__item-thumbnail">
+                    <p class="cartao__item-titulo">HZC - Love Machine</p>
+                    <p class="cartao__item-perfil">Júlia Fonseca</p>
+                </li>
+                <li class="cartao__item">
+                    <img src="assets/img/miniatura_2.png" alt="Miniatura do item" class="cartao__item-thumbnail">
+                    <p class="cartao__item-titulo">HZC - Vol. 3</p>
+                    <p class="cartao__item-perfil">Júlia Fonseca</p>
+                </li>
+                <li class="cartao__item">
+                    <img src="assets/img/miniatura_3.png" alt="Miniatura do item" class="cartao__item-thumbnail">
+                    <p class="cartao__item-titulo">HZC - Pescaria na Urca</p>
+                    <p class="cartao__item-perfil">Júlia Fonseca</p>
+                </li>
+                <li class="cartao__item">
+                    <img src="assets/img/miniatura_4.png" alt="Miniatura do item" class="cartao__item-thumbnail">
+                    <p class="cartao__item-titulo">Vidalocagi - Guerreiros do Asfalto</p>
+                    <p class="cartao__item-perfil">Júlia Fonseca</p>
+                </li>
+                <li class="cartao__item">
+                    <img src="assets/img/miniatura_5.png" alt="Miniatura do item" class="cartao__item-thumbnail">
+                    <p class="cartao__item-titulo">Vidalocagi - Não importa o nível</p>
+                    <p class="cartao__item-perfil">Júlia Fonseca</p>
+                </li>
+            </ul>
+        </article>
+        <article class="cartao destaque-artes">
             <div class="cartao__imagem">
-                <img src="assets/img/banner-mobile_2.png" alt="Banner do vídeo hzc - life is... / 2021">
+                <img src="assets/img/banner-mobile_2.png" alt="Banner do vídeo hzc - life is... / 2021" class="cartao__imagem--mobile">
+                <img src="assets/img/banner_2.png" alt="Banner do vídeo hzc - life is... / 2021" class="cartao__imagem--desktop">
             </div>
             <div class="cartao__corpo">
                 <p class="cartao__destaque">Nova arte</p>
@@ -101,7 +167,7 @@
                 <button class="cartao__botao cartao__botao--destaque cartao__botao--comprar"><i></i>Comprar agora</button>
             </div>
         </article>
-        <section class="secao">
+        <section class="secao secao-artes">
             <h3 class="titulo-secao">Camisas mais recentes</h3>
             <article class="cartao">
                 <div class="cartao__imagem">
