@@ -65,10 +65,12 @@ body {
 
 @media screen and (min-width: 1440px) {
     .cabecalho {
+        background-color: #1D232A;
         display: grid;
         column-gap: 32px;
         grid-template-columns: 1fr auto auto;
         padding: 16px calc((100% - 1120px)/2);
+        box-sizing: border-box;
         height: 80px;
     }
 
@@ -299,7 +301,8 @@ body {
 .cartao__corpo {
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr;
+    column-gap: 24px;
     row-gap: 16px;
     padding: 16px;
 }
@@ -458,7 +461,7 @@ body {
     .cartao__botao--destaque {
         width: fit-content;
         justify-self: flex-start;
-        grid-column: auto;
+        grid-column: span 2;
         padding: 8px;
     }
 }
