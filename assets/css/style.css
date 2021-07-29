@@ -47,10 +47,6 @@ body {
     width: 40px;
 }
 
-.cabecalho__titulo {
-    display: none;
-}
-
 .cabecalho__perfil {
     display: none;
 }
@@ -68,7 +64,7 @@ body {
         background-color: #1D232A;
         display: grid;
         column-gap: 32px;
-        grid-template-columns: 1fr auto auto;
+        grid-template-columns: 1fr auto;
         padding: 16px calc((100% - 1120px)/2);
         box-sizing: border-box;
         height: 80px;
@@ -81,18 +77,13 @@ body {
     .cabecalho__logo {
         display: none;
     }
-
-    .cabecalho__titulo {
-        display: block;
-        font-size: 1.5rem;
-        font-weight: 700;
-    }
     
     .cabecalho__perfil {
         display: grid;
         grid-template-columns: auto auto auto;
         column-gap: 8px;
         align-items: center;
+        justify-self: flex-end;
         color: #95999C;
         padding: 8px 32px;
         border-right: 1px solid #95999C;
@@ -228,6 +219,7 @@ body {
     .principal {
         grid-template-columns: auto 1fr auto;
         grid-template-areas: 
+        "titulo-pagina titulo-pagina titulo-pagina"
         "destaque-video destaque-video recente-videos"
         "secao-videos secao-videos secao-videos"
         "recente-artes destaque-artes destaque-artes"
@@ -247,7 +239,7 @@ body {
     }
 
     .titulo-pagina {
-        display: none;
+        grid-area: titulo-pagina;
     }
 
     .destaque-video {
@@ -318,34 +310,10 @@ body {
 }
 
 .cartao__perfil {
-    display: flex;
-    align-items: center;
     color: #95999C;
     font-size: 0.9rem;
     grid-column: span 2;
 }
-
-.cartao__perfil::before {
-    content: "";
-    position: absolute;
-    top: -24px;
-    right: 16px;
-    display: block;
-    width: 48px;
-    height: 48px;
-    background-image: url(../img/profile_2.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.cartao__perfil--destaque::before {
-    position: static;
-    width: 24px;
-    height: 24px;
-    margin-right: 8px;
-}
-
 
 .cartao__info {
     display: flex;
@@ -432,7 +400,6 @@ body {
         display: grid;
         gap: 8px;
         grid-template-columns: auto 1fr;
-        grid-template-rows: 1fr 1fr;
     }
 
     .cartao__item-thumbnail {
